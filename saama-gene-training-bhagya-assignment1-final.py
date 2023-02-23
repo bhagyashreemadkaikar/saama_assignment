@@ -123,7 +123,7 @@ def access_athena():
                     ResultConfiguration = { 'OutputLocation': 's3://saama-gene-training-data-bucket/BhagyaM/Landing/INFY/'}
                     )
                     
-                    
+#create dataframe to read csv file and generate expected output                    
 def create_df(frm_dir,to_dir):
     for file in my_bucket.objects.filter(Prefix=frm_dir):
         file1=file.key
