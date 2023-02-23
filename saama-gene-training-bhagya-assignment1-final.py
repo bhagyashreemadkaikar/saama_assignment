@@ -158,10 +158,10 @@ def create_df(frm_dir,to_dir):
 
             
 if(check_ind_file()==1):
-    #copy_file(Inbound_path,Preprocess_path)
-    #cnvrt_xls_csv()
-    #move_to_landing(Preprocess_path,Landing_path) 
-    #create_crawler()
+    copy_file(Inbound_path,Preprocess_path)
+    cnvrt_xls_csv()
+    move_to_landing(Preprocess_path,Landing_path) 
+    create_crawler()
     #access_athena()
     create_df(Landing_path,Output_path)
 else:
